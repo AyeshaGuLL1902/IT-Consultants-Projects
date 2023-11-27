@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair:opsz@5..1200&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    padding: 20px;
+}
+.nav-bar .logo{
+    position: static;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(var(--txt,var(--color_15)));
+    display: inline-block;
+    padding: 0 10px;
+    font-size: large;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: orangered;
+    transition: var(--trans,color .4s ease 0s);
+}
+.header{
+    background: #E8EAF6;
+}
+
+/* .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-2-1{
+    flex: 1;
+    flex-basis: 50%;
+    max-width: 1100px;
+}
+.col-2-2{
+    flex-basis: 10%;
+    min-width: 300px;
+}
+.col-2-1 img{
+    max-width: 100%;
+    padding: 50px 0;
+} */
+.row{
+    display: flex;    
+}
+.col-2-1{
+    flex: 1;
+    flex-basis: 75%;
+    max-width: 1100px;
+}
+.col-2-1 img{
+    width: 100%;
+}
+.col-2-2{
+    flex: 2;
+    max-width: 100px;
+    margin-left: 70px;
+}
+.icon-contianer{
+    margin-top: 500px;
+    margin-left: 65px;
+}
+.icon-contianer i{
+    font-size: 26px;
+    padding: 10px;
+}
+@media only screen and (max-width:800px){
+    .icon-contianer{
+        visibility: hidden;
+    }
+    .row{
+        text-align: center;
+    }
+    .col-2-1{
+        flex-basis: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+.TextContainer{
+    background: rgb(153, 201, 185);
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: -40px;
+    visibility: inherit;
+    width: 685px;
+    left: 272px;
+}
